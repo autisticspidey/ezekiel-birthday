@@ -43,6 +43,7 @@ img {
   width: 30%;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .texts {
@@ -92,9 +93,9 @@ img {
 }
 
 .bubble.large, .bubble.grow {
-  width: 70rem;
+  width: 30rem;
   max-width: 100%;
-  font-size: 30px;
+  font-size: 20px;
   text-align: left;
   text-transform: uppercase;
 }
