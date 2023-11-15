@@ -1,0 +1,210 @@
+body {
+  background-color: #ffabf2;
+  padding: 2rem;
+  border: 1px solid red;
+  /* width: 80%; */
+}
+
+/* color pallet */
+:root {
+  --c1: #F12E90;
+  --c2: #FF8BDA;
+  --c3: #F84791;
+  --c4: #CE2380;
+  --c5: #C45F90;
+  --c6: #D691A0;
+  --tc: #F054B0;
+  --ts1: #F40096;
+  --tsalt1: #FC8BC0;
+  --ts3: #FA53A0;
+  --bc: #FF0BAC;
+  --c12: #EC7CAA;
+  --c13: #EA85C7;
+  --c14: #F3B9DF;
+  --c15: #D95980;
+}
+
+body {
+  background-color: #f076b1;
+}
+
+header h1 img {
+  /* filter: invert(9%) sepia(63%) saturate(356%) hue-rotate(282deg) 
+        brightness(87%) contrast(135%); */
+  filter: hue-rotate(300deg);
+  width: 5rem;
+  transform: translate(-5px, 15px);
+  transition: 3s -webkit-filter;
+}
+
+header h1:hover img {
+  filter: invert(9%) sepia(63%) saturate(356%) hue-rotate(282deg) brightness(87%) contrast(135%);
+  -webkit-filter: invert(9%) sepia(63%) saturate(356%) hue-rotate(282deg) brightness(87%) contrast(135%);
+}
+
+header h1 {
+  color: #f076b1;
+  background-color: #f788d0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5rem;
+  word-spacing: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow:
+    inset 0 0 0 10px #FA53A0,
+    0 0 0 20px #F12E90,
+    0 0 0 30px #FA53A0;
+  padding: 1.5rem 3rem;
+  border-radius: 1.5rem;
+  margin: 3rem;
+  text-shadow:
+    0px 0px 1px black,
+    -5px 5px 4px #F40096,
+    -7px 9px 4px #FF0BAC;
+}
+
+.begin h2 {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 30px;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.photos img {
+  margin: auto;
+  width: 20%;
+  min-width: 200px;
+  max-width: 300px;
+  display: block;
+}
+
+.bubble {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-size: 16px;
+  line-height: 1.3em;
+  background-color: #fff;
+  color: #000;
+  padding: 12px;
+  box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff, 0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000;
+  box-sizing: border-box;
+  width: 200px;
+}
+.bubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+.bubble.shadow {
+  box-shadow: 0 -4px #fff, 0 -8px #000, 4px 0 #fff, 4px -4px #000, 8px 0 #000, 0 4px #fff, 0 8px #000, -4px 0 #fff, -4px 4px #000, -8px 0 #000, -4px -4px #000, 4px 4px #000, 4px 12px rgba(0, 0, 0, 0.1), 12px 4px rgba(0, 0, 0, 0.1), 8px 8px rgba(0, 0, 0, 0.1);
+}
+/* .bubble.mini {
+  width: 110px;
+  font-size: 16px;
+  padding: 4px;
+  font-family: monospace;
+} */
+/* .bubble.medium {
+  width: 350px;
+} */
+.bubble.large, .bubble.grow {
+  width: 70rem;
+  max-width: 100%;
+  font-size: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.bubble.large {
+  align-self: flex-end;
+  background-color: rgb(251, 199, 254);
+}
+
+.bubble.grow {
+  background-color: rgb(255, 193, 225);
+}
+
+/* .images {
+  height: 30rem;
+} */
+
+/* .bubble.large {
+  width: initial;
+} */
+/* .bubble.top::after {
+  height: 4px;
+  width: 4px;
+  top: -8px;
+  left: 32px;
+  box-shadow: 0 -4px #000, 0 -8px #000, 0 -12px #000, 0 -16px #000, -4px -12px #000, -8px -8px #000, -12px -4px #000, -4px -4px #fff, -8px -4px #fff, -4px -8px #fff, -4px 0 #fff, -8px 0 #fff, -12px 0 #fff;
+} */
+/* .bubble.right::after {
+  height: 4px;
+  width: 4px;
+  top: 84px;
+  right: -8px;
+  background: white;
+  box-shadow: 4px -4px #fff, 4px 0 #fff, 8px 0 #fff, 0 -8px #fff, 4px 4px #000, 8px 4px #000, 12px 4px #000, 16px 4px #000, 12px 0 #000, 8px -4px #000, 4px -8px #000, 0 -4px #fff;
+} */
+.bubble.bottom::after {
+  height: 4px;
+    width: 4px;
+    top: 84px;
+    right: -8px;
+    background: white;
+    box-shadow: 4px -4px #fff, 4px 0 #fff, 8px 0 #fff, 0 -8px #fff, 4px 4px #000, 8px 4px #000, 12px 4px #000, 16px 4px #000, 12px 0 #000, 8px -4px #000, 4px -8px #000, 0 -4px #fff;
+}
+.bubble.left::after {
+  height: 4px;
+  width: 4px;
+  top: 20px;
+  left: -8px;
+  background: white;
+  box-shadow: -4px -4px #fff, -4px 0 #fff, -8px 0 #fff, 0 -8px #fff, -4px 4px #000, -8px 4px #000, -12px 4px #000, -16px 4px #000, -12px 0 #000, -8px -4px #000, -4px -8px #000, 0 -4px #fff;
+}
+
+@media screen and (max-width: 600px) {
+.bubble.large, .bubble.grow {
+  font-size: 15px;
+}
+}
+
+@media screen and (max-width: 600px) {
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+}
